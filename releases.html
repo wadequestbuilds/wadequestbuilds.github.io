@@ -5,9 +5,20 @@
 <title>Release notes | Wade's Quest Builds</title>
 <style>
 :root{color-scheme:dark}*{box-sizing:border-box}body{margin:0;background:#0d1117;color:#e6edf3;font:16px/1.55 system-ui,-apple-system,sans-serif}main{max-width:780px;margin:auto;padding:32px 20px 70px}a{color:#70b7ff}a:hover{color:#a5d2ff}header{border-bottom:1px solid #30363d;padding-bottom:20px;margin-bottom:24px}h1{font-size:clamp(1.8rem,5vw,2.5rem);line-height:1.15;margin:16px 0 8px}h2{font-size:1.25rem;margin:0}.lead,.muted{color:#a6b1bf}.lead{margin:0}.card{background:#161b22;border:1px solid #30363d;border-radius:14px;padding:22px;margin:16px 0}.meta{color:#a6b1bf;font-size:.9rem;margin:4px 0 12px}ul{padding-left:1.25rem;margin:0}li+li{margin-top:6px}.tag{display:inline-block;background:#243b2b;color:#abdbb9;border:1px solid #345c41;border-radius:99px;padding:2px 9px;font-size:.78rem;font-weight:700;margin-left:8px;vertical-align:middle}.caution{background:#211b12;border-color:#5a4626;color:#ead8b4}footer{color:#a6b1bf;font-size:.9rem;margin-top:28px}
+
+/* Shared site navigation */
+.site-nav { box-sizing:border-box; width:100%; background:#111b29; border-bottom:1px solid #35465b; color:#e6edf3; font:600 15px/1.3 system-ui,-apple-system,sans-serif; }
+.site-nav *, .site-nav *::before, .site-nav *::after { box-sizing:border-box; }
+.site-nav .nav-inner { max-width:1120px; padding:10px 20px; margin:auto; display:flex; align-items:center; gap:18px; flex-wrap:wrap; }
+.site-nav .nav-brand { color:#fff; text-decoration:none; font-weight:800; white-space:nowrap; letter-spacing:.01em; }
+.site-nav .nav-links { display:flex; flex-wrap:wrap; align-items:center; gap:5px; }
+.site-nav a.nav-link { color:#d1dbe7; text-decoration:none; padding:9px 13px; border-radius:8px; white-space:nowrap; }
+.site-nav a.nav-link:hover, .site-nav a.nav-link:focus-visible { background:#243e58; color:white; outline:2px solid transparent; }
+.site-nav a.nav-link[aria-current="page"] { color:#fff; background:#246d49; }
+@media(max-width:560px){.site-nav .nav-inner{padding:10px 12px;gap:8px}.site-nav .nav-brand{width:100%;font-size:14px}.site-nav .nav-links{width:100%;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}.site-nav a.nav-link{text-align:center;padding:10px 6px;font-size:14px}}
 </style>
 </head>
-<body><main>
+<body><nav class="site-nav" aria-label="Main navigation"><div class="nav-inner"><a class="nav-brand" href="index.html">Wade's site</a><div class="nav-links"><a class="nav-link" href="index.html">Home</a><a class="nav-link" href="index.html#games" aria-current="page">Games</a><a class="nav-link" href="usa-radio.html">USA Radio</a><a class="nav-link" href="free-finds.html">Free Finds</a></div></div></nav><main>
 <header><a href="index.html">&larr; All Quest builds</a><h1>Release notes</h1><p class="lead">What changed in each Quest 3 mixed-reality app. Updated September 26, 2026.</p></header>
 <section class="card" id="pip-pebble"><h2>Pip &amp; Pebble <span class="tag">v0.1</span></h2><p class="meta">September 26, 2026</p><ul><li>Original black-and-white stylized beagle companion, Pip, in passthrough. Fetch a thrown ball, send Pip to a floor or reachable furniture surface, pet his head, or press A for a spin trick.</li><li>Foldout canvas nook with teal awning, three original spot palettes, recorded CC0 dog bark, and room scan status/Spatial Data permission flow. Fallback floor and props are virtual when room data is unavailable.</li><li>Controller and pinch-based hand interactions. Graphics quality LOW/MED/HIGH/EXTRA HIGH persists. Hand throwing lacks velocity; use controllers for fetch. Procedural animation and simple waypoints, not photoreal AI. Built and signed, not tested on a Quest headset.</li></ul></section>
 <section class="card" id="mr-arcade"><h2>MR Arcade <span class="tag">v0.4</span></h2><p class="meta">September 26, 2026</p><ul><li>20 compact games in passthrough, including Puppy Pal, Drone Defense, Wall Pinball and Room Golf.</li><li>Added a second page of 10 modes, room-outline overlays, hub visuals and faster Drone Defense waves.</li><li>Room Setup now reports scan status and permission or scene-data problems instead of failing silently. Added selectable dog types and a recorded bark for Puppy Pal. These fixes are built but not yet confirmed on Wade's headset.</li></ul></section>
