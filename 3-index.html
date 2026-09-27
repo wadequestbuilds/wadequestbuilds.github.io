@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wade's Quest Builds</title>
+<style>
+  body { font-family: system-ui, -apple-system, sans-serif; background:#0d1117; color:#e6edf3; max-width:640px; margin:0 auto; padding:24px; }
+  h1 { font-size:1.6rem; }
+  .card { background:#161b22; border:1px solid #30363d; border-radius:12px; padding:20px; margin:16px 0; }
+  .card h2 { margin:0 0 6px 0; font-size:1.2rem; }
+  .ver { color:#8b949e; font-size:0.9rem; margin-bottom:12px; }
+  a.dl { display:block; text-align:center; background:#238636; color:#fff; text-decoration:none; font-weight:600; padding:14px; border-radius:8px; font-size:1.1rem; }
+  a.dl:hover { background:#2ea043; }
+  ol { line-height:1.7; padding-left:20px; }
+  .note { color:#8b949e; font-size:0.85rem; margin-top:8px; }
+</style>
+</head>
+<body>
+<h1>Wade's Quest Builds</h1>
+<p>Mixed-reality apps for Meta Quest 3. Tap a download, then install.</p>
+
+<div class="card">
+  <img src="PipPebble-icon.png" alt="Pip and Pebble icon" width="80" height="80" style="float:right;border-radius:16px;margin-left:12px">
+  <h2>Pip &amp; Pebble</h2>
+  <div class="ver">v0.1 &middot; original AR beagle companion, fetch, tricks, canvas nook &middot; 953 KB</div>
+  <p class="note"><a href="releases.html#pip-pebble">Release notes</a></p>
+  <a class="dl" href="builds/PipPebble-v0.1.apk" download="PipPebble-v0.1.apk">Download Pip &amp; Pebble v0.1</a>
+  <div class="note">Stylized prototype, not headset-tested. Keep Guardian on; room scene access requires permission.</div>
+</div>
+
+<div class="card">
+  <h2>MR Arcade</h2>
+  <div class="ver">v0.4 &middot; room scan status, dog types and recorded bark &middot; ~1 MB</div>
+  <p class="note"><a href="releases.html#mr-arcade">Release notes</a></p>
+
+  <a class="dl" href="builds/MRArcade-v0.4.apk" download="MRArcade-v0.4.apk">Download MR Arcade v0.4</a>
+</div>
+
+<div class="card">
+  <h2>Sand Garden</h2>
+  <div class="ver">v0.2 &middot; AR sand sandbox - push toys with your hands, dig with a grabbable shovel &middot; ~0.7 MB</div>
+  <p class="note"><a href="releases.html#sand-garden">Release notes</a></p>
+
+  <a class="dl" href="builds/SandGarden-v0.2.apk" download="SandGarden-v0.2.apk">Download Sand Garden v0.2</a>
+  <div class="note">Redone sand physics, hand-pushable ball, block and truck, shovel scoop-and-pour. Installs over v0.1. Not headset-tested. Keep Guardian on.</div>
+</div>
+
+<div class="card">
+  <h2>Candy Cane Lane</h2>
+  <div class="ver">v0.2 &middot; classic 134-space route, 64-card deck, six landmarks &middot; 837 KB</div>
+  <p class="note"><a href="releases.html#candy-cane-lane">Release notes</a></p>
+
+  <a class="dl" href="builds/CandyCaneLane-v0.2.apk" download="CandyCaneLane-v0.2.apk">Download Candy Cane Lane v0.2</a>
+</div>
+
+<div class="card">
+  <h2>Room Bots</h2>
+  <div class="ver">v0.1 &middot; your scanned walls and furniture wake up as living robots &middot; ~0.75 MB</div>
+  <p class="note"><a href="releases.html#room-bots">Release notes</a></p>
+
+  <a class="dl" href="builds/RoomBots-v0.1.apk" download="RoomBots-v0.1.apk">Download Room Bots v0.1</a>
+</div>
+
+<div class="card">
+  <h2>Reef Tank</h2>
+  <div class="ver">v0.1 &middot; mixed-reality fish tank on a scanned table &middot; 25 fish species &middot; ~0.9 MB</div>
+  <p class="note"><a href="releases.html#reef-tank">Release notes</a></p>
+
+  <a class="dl" href="builds/ReefTank-v0.1.apk" download="ReefTank-v0.1.apk">Download Reef Tank v0.1</a>
+  <div class="note">10-40 gallon presets, feeding and tap-to-follow. Stylized prototype, not headset-tested. Keep Guardian on.</div>
+</div>
+
+<div class="card">
+  <h2>How to install</h2>
+  <ol>
+    <li>Tap a download above in the Quest browser.</li>
+    <li>Open the download in the Quest Files app (or pull it up on your PC and use <b>adb install -r</b> / SideQuest).</li>
+    <li>Find the app under Library &rarr; Unknown Sources.</li>
+    <li>Keep your Guardian boundary on. Room scan is not collision protection.</li>
+  </ol>
+  <div class="note">Installing over an older version keeps your high scores. Do not uninstall first.</div>
+</div>
+</body>
+</html>
